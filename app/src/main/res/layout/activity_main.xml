@@ -4,4 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/recharge_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:padding="30dp"
+        android:text="RECHARGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/check_balance_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/colorPrimary"
+        android:padding="30dp"
+        android:text="CHECK BALANCE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/balance_transfer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorPrimary"
+        android:padding="30dp"
+        android:text="BALANCE TRANSFER"
+        app:layout_constraintEnd_toEndOf="@+id/check_balance_btn"
+        app:layout_constraintStart_toStartOf="@+id/check_balance_btn"
+        app:layout_constraintTop_toTopOf="@+id/check_balance_btn" />
+
+    <Button
+        android:id="@+id/call_me_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:padding="30dp"
+        android:text="CALL ME BACK"
+        app:layout_constraintEnd_toEndOf="@+id/recharge_btn"
+        app:layout_constraintStart_toStartOf="@+id/recharge_btn"
+        app:layout_constraintTop_toBottomOf="@+id/recharge_btn" />
+
+    <Button
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimary"
+        android:padding="30dp"
+        android:text="CREDIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
